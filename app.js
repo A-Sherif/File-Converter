@@ -217,10 +217,5 @@ function deleteFile(fileName) {
     }
 }
 
-app.listen(3000, (err) => {
-    if(err){
-        console.log(err)
-    } else {
-        console.log(`Server listening at port 3000 ...\n`);    
-    }
-});
+
+app.listen(process.env.PORT)

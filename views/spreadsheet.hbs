@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PDF converter</title>
+    <link href="/css/home.css" rel="stylesheet" type="text/css">
+    <link href="/css/modal.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/my-icons-collection/font/flaticon.css">
+    <script src="/js/spreadsheet.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="/"><p>File Converter</p></a>
+    </header>
+    <div class="welcomeText">
+        <h1>Convert SpreadSheet to PDF Documents Online for FREE</h1>
+        <p>Our online tool allows you to convert SpreadSheet Documents to PDF for free.</p>
+    </div>
+    <section class="chooseFile">
+        <p>Drag &amp; Drop the File Here </p>
+        <label for="spreadsheetFile" class="custom-file-upload"> <i class="flaticon-zoom"></i> Choose File <div id="spinner"></div>
+        </label>
+        <input id="spreadsheetFile" name="spreadsheetFile" type="file" />
+        <button class="spreadsheetDownloadPDF">Download PDF</button>
+        </div>
+    </section>
+    <div class="purchaseModal">
+        <div class="purchaseModalContent">
+            <section class="purchaseModalHeader">
+                <p class="purchaseModalHeaderText">Error!</p>
+            </section>
+            <div class="purchaseModalBody">
+                <p>Please choose document with Xlsx extension!</p>
+            </div>
+            <section class="purchaseModalFooter">
+                <button class="btnClosePurchaseModal">Close</button>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

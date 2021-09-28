@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+header {
+    background: rgb(62, 10, 75);
+}
+
+header p {
+    color: orange;
+    font-size: 1rem;
+    margin-left: 2em;
+}
+
+.welcomeText {
+    color: black;
+    text-align: center;
+}
+
+.welcomeText h1 {
+    font-size: 2.5rem;
+}
+
+.welcomeText p {
+    font-size: 2rem;
+}
+
+span {
+    width: 50px;
+    height: 50px;
+}
+
+.icons a{
+    background: rgb(62, 10, 75);   
+    border-radius: 10px;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons a:hover{
+    background: rgb(98, 16, 119);
+    border-radius: 0px;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    align-self: center;
+}
+
+.fileIcon p {
+    text-align: center;
+    color: white;
+}
+
+.chooseFile {
+    padding: 1rem 3rem 3rem 3rem;
+    width: fit-content;
+    width: -moz-max-content;
+    min-width: 25%;
+    margin: auto;
+    border: 2px solid rgb(98, 16, 119);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.chooseFile p {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 500
+}
+
+#wordFile,#spreadsheetFile,#pngFile,#jpgFile {
+    display: none;
+}
+
+.chooseFile label {
+    background-color: #e5832e;
+    display: block;
+    color: white;
+    font-weight: 500;
+    padding: 0.7rem 1.8rem;
+    width: fit-content;
+    width: -moz-max-content;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.chooseFile label:hover {
+    background-color: #FE7600;
+}
+
+.wordDownloadPDF:focus, .spreadsheetDownloadPDF:focus , .pngDownloadPDF:focus, .jpgDownloadPDF:focus{
+    outline: 0;
+}
+
+.btnSendMail:hover {
+    background-color: #4066a2;
+}
+
+.wordDownloadPDF, .spreadsheetDownloadPDF, .pngDownloadPDF, .jpgDownloadPDF{
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    background-color: #D8D8D8;
+    border: 0;
+    border-radius: 5px;
+    color: #333333;
+    font-weight: 500;
+    font-family: "Roboto";
+}
+
+.btnDownloadActive {
+    box-shadow: 0px 0px 10px 3px #d6e6dd;
+    cursor: pointer;
+    background-color: #1ccf0f;
+    color: white;
+}
+
+.btnDownloadActive:focus {
+    outline: 0;
+}
+
+#spinner,
+#spinner2 {
+    float: right;
+    display: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid #f3f3f3;
+    border-top: 3px solid #0026fe;
+    border-radius: 100%;
+    animation: spin 1s infinite linear;
+    margin-left: 0.5rem;
+    margin-top: -0.2rem;
+}
+
+#spinner2 {
+    width: 1rem;
+    height: 1rem;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#spinner.show,
+#spinner2.show {
+    display: inline;
+}
